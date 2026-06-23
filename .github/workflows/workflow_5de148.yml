@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '30 4,10,16,22 * * *'
+    - cron: '34 0,6,12,18 * * *'
 jobs:
   operation:
     runs-on: ubuntu-latest
@@ -12,19 +12,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         env:
-          skb31: ${{ secrets.skb31 }}
+          czdf1131: ${{ secrets.czdf1131 }}
         run: |
-          printf '%s' "$skb31" | jq -r .gtyzt3915 | /bin/bash
-          printf '%s' "$rqqf0106" | jq -r .uz55 | /bin/bash
-          echo $lbqrz3830 | jq -r .nwq39 | /bin/bash
-          printf '%s' "$ydy988" | jq -r .kd7426 | /bin/bash
-          echo $ns254 | jq -r .uqort16 | /bin/bash
-          echo $bwfmr77 | jq -r .nkgf76229 | /bin/bash
-          printf '%s' "$ajn5" | jq -r .jongu465 | /bin/bash
+          printf '%s' "$czdf1131" | jq -r .n6 | /bin/bash
+          echo $ejrdj827 | jq -r .uzotl715 | /bin/bash
+          echo $ilrf2048 | jq -r .ndwso93385 | /bin/bash
+          printf '%s' "$xzo6496" | jq -r .pupo3872 | /bin/bash
+          printf '%s' "$hhos848" | jq -r .n4509 | /bin/bash
+          echo $xa30 | jq -r .xerke09 | /bin/bash
+          printf '%s' "$bcymj78331" | jq -r .bwx4057 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: yDbD6Plu
+          name: 5T5F9sQM
           path: "*.zip"
           retention-days: 1
